@@ -1,2 +1,4 @@
 # ECMAScript6-base
-ECMAScript 6 learning
+This repository is about ECMAScript 6 base knowlege. It is just my person understanging for learning purpose.
+
+
