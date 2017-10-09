@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+<body>
+    页面A:
+    <div></div>
+    <a href="./b.html">跳转到页面B</a>
+    <script>
+        $.ajax({
+            url: "a.json"
+        }).done(function(data){
+           $('div').html(data.a);
+        });
+        // function pushhistory() {
+        //     var state = {
+        //         title: "title",
+        //         url: "#"
+        //     };
+        //     window.history.pushState(state, "title", "#");
+        // };
+        // pushhistory();
+        // window.addEventListener("popstate", function(e) {
+        //     location.reload();
+        // }, false);
+    </script>
+</body>
+</html>
